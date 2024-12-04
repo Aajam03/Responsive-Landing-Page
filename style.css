@@ -1,0 +1,411 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+#main {
+  height: 100vh;
+  width: 100vw;
+}
+
+#navbar {
+  height: 5rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0% 2rem;
+  box-shadow: 0px 0px 21px -7px;
+}
+
+#prt1 {
+  margin-right: auto;
+}
+
+#prt1 img {
+  height: 6rem;
+  width: 5rem;
+  z-index: 10;
+}
+
+#prt2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  font-size: 1.4rem;
+}
+
+.nav-icons {
+  font-size: 2.2rem;
+  color: rgb(205 119 15);
+  font-weight: 500;
+}
+
+.nav-icons:hover {
+  color: #477108;
+  border: none;
+  transition: 1s ease;
+}
+
+a {
+  text-decoration: none;
+  color: #477108;
+  font-weight: 800;
+}
+
+a:hover {
+  color: rgb(205 119 15);
+  border-bottom: 2px solid #477108;
+  transition: 1s ease;
+}
+
+#cont-container {
+  height: calc(100% - 5rem);
+  width: 100vw;
+  display: flex;
+}
+
+#main-left {
+  height: 100%;
+  width: 20%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#main-left h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(205 119 15);
+  border-bottom: 1px solid #477108;
+}
+
+#main-left h4:hover {
+  color: #477108;
+  transition: 1s ease;
+}
+
+h1 {
+  color: #477108;
+}
+
+#main-right {
+  height: 100%;
+  width: 80%;
+  position: relative;
+}
+
+#right-top {
+  height: 13%;
+  width: 100%;
+}
+
+#right-top img {
+  height: 4rem;
+  margin: 1rem 0 0 2rem;
+  width: 6rem;
+}
+
+#middle {
+  height: 47%;
+  width: 100%;
+  display: flex;
+}
+
+#right-left {
+  height: 100%;
+  width: 50%;
+  padding: 2rem 2rem 0 2rem;
+}
+
+#right-left p {
+  width: 84%;
+  margin-top: 0.4rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+}
+
+#right-left button {
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-top: 1rem;
+  color: #3e5916;
+  border: 2px solid rgb(205 119 15);
+}
+
+#right-left button:hover {
+  color: rgb(205 119 15);
+  border: 2px solid #3e5916;
+  transition: 1s ease;
+}
+
+#right-right {
+  height: 100%;
+  width: 50%;
+}
+
+#right-right #img-container {
+  height: 100%;
+  width: 70%;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+#img-container img {
+  height: 100%;
+  width: 100%;
+}
+
+#right-bottom {
+  height: 33%;
+  width: 100%;
+  position: relative;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin: 0% auto;
+  padding: 1rem 0 0 1rem;
+}
+
+#right-bottom::-webkit-scrollbar {
+  display: none;
+}
+
+.dishes {
+  height: 11rem;
+  width: 11rem;
+  border-radius: 50%;
+  margin-right: 3rem;
+  display: inline-block;
+  overflow: hidden;
+  object-fit: cover;
+  box-shadow: 0px 7px 15px;
+  border: 2px solid rgb(205 119 15);
+}
+
+.dishes:hover {
+  height: 12rem;
+  width: 12rem;
+  transition: 1s ease;
+}
+
+.dishes img {
+  height: 12rem;
+  width: 12rem;
+}
+
+footer {
+  height: 30%;
+  width: 100%;
+  padding: 0 3rem;
+  background-color: #3e59164f;
+}
+
+#list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: rgb(205 119 15);
+}
+
+#list h4:hover {
+  color: #477108;
+  border: none;
+  transition: 1s ease;
+  border-bottom: 2px solid rgb(205 119 15);
+}
+
+#copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#show-sidebar{
+  display: none;
+}
+
+#sidebar{
+  position: absolute;
+  top: 0%;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0.5rem 2rem 2rem 2rem;
+  z-index: 10;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.879);
+}
+
+#menu{
+  font-size: 1.5rem;
+  /* background-color: #47710847; */
+  color: rgb(205 119 15);
+  font-weight: 600;
+  background: none;
+  border: none;
+  outline: none;
+  /* border-bottom: 2px solid #3e5916; */
+}
+
+
+@media (max-width:426px) {
+
+    #navbar {
+      height: 3rem;
+      padding: 0 1rem;
+    }
+
+    #show-sidebar{
+      display: block;
+    }
+
+
+    #prt1 img {
+      height: 4rem;
+      width: 3rem;
+    }
+
+    #cont-container {
+      height: calc(100% - 3rem);
+    }
+
+    #right-right #img-container {
+      height: 100%;
+      width: 85%;
+    }
+    
+    .links{
+      display: none;
+    }
+
+    #prt2{
+      gap: 1rem;
+    }
+
+    .nav-icons{
+      font-size: 1.5rem;
+      font-weight: 800;
+      
+    }
+    
+     #right-top {
+      height: 6%;
+      width: 100%;
+    }
+
+    #right-top img{
+      display: none;
+    }
+
+    #main-left {
+      display: none;
+    }
+    
+    #main-right {
+      height: 100%;
+      width: 100%;
+    }
+
+    /* #right-top{
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      gap: 0.5rem;
+    } */
+
+    #middle {
+      height: calc(100% - 33%);
+      flex-direction: column-reverse;
+    }
+
+    #right-right {
+      height: 50%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #right-left {
+      height: 50%;
+      width: 100%;
+      padding-top: 0.5rem;
+    }
+
+    #right-left p {
+      width: 95%;
+      margin:0 0 1rem 0;
+      font-size: 0.8rem;
+    }
+
+    #right-left h1{
+      font-size: 1.4rem;
+    }
+
+    #price{
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+    #right-left button {
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+    }
+
+    #right-bottom {
+      padding: 1.5rem 0 0 1rem;
+  }
+
+    .dishes {
+      height: 9rem;
+      width: 9rem;
+    }
+
+    .dishes:hover {
+      height: 10rem;
+      width: 10rem;
+    }
+
+    #copyright {
+      padding: 1rem 0;
+      font-size: 0.8rem;
+      margin: 0;
+    }
+
+    footer{
+      padding: 0 1rem;
+      background-color: rgba(168, 117, 55, 0.114);
+    }
+
+    #list {
+      display: flex;
+      gap: 0.6rem;
+      font-size: 1rem;
+      font-weight: 200;
+    }
+
+}
